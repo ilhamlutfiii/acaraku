@@ -2,7 +2,7 @@ version: '3'
 
 services:
   app:
-    container_name: docker-node-mysql
+    container_name: docker-node-mysql1
     build: .
     ports:
       - "8080:3000"
@@ -15,7 +15,7 @@ services:
 
 
   mysql-dev:
-    container_name: mysql-container
+    container_name: mysql-container1
     image: mysql:8.0.2
     environment:
       MYSQL_ROOT_PASSWORD: root
